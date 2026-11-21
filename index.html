@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d31">
+  <meta name="description" content="Practice 562 Quranic Arabic MCQs with clear questions, topic filters, explanations and a challenging timed mock exam.">
+  <title>Fehm-e-Quran | Clear Questions, Challenging Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell top-inner">
+      <div class="brand"><div class="brand-mark" aria-hidden="true">ق</div><div><strong>Fehm-e-Quran</strong><small>Muallim-ul-Quran Practice</small></div></div>
+      <div class="head-right"><span class="live-dot"></span><span>Practice bank</span><strong id="headerCount">562 MCQs</strong></div>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <div class="intro-copy"><div class="eyebrow">LEARN WITH CONFIDENCE</div><h1>Clear questions.<br><em>Challenging answers.</em></h1><p>Simple English questions, meaningful options and short explanations. Learn Quranic Arabic one question at a time.</p></div>
+      <div class="overview" aria-label="Your practice progress"><div class="overview-icon" aria-hidden="true">✦</div><span class="overview-label">YOUR PROGRESS</span><div class="overview-main"><strong id="overviewDone">0</strong><span id="overviewTotal">/ 562 practiced</span></div><div class="meter"><div id="overviewBar"></div></div><div class="overview-bottom"><span><b id="overviewCorrect">0</b> correct answers</span><span id="overviewPercent">0% accuracy</span></div></div>
+    </section>
+    <div class="mode-bar"><div class="mode-copy"><span class="mode-heading">Choose how to learn</span><span class="mode-detail">Start with practice, then test your skills.</span></div><div class="mode-actions"><button id="practiceMode" class="mode-button active" type="button">✎ Practice</button><button id="mockMode" class="mode-button" type="button">⏱ 50-question mock</button></div></div>
+    <section class="workspace">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-head"><strong>Explore topics</strong><span>562 total</span></div>
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Search a word or topic..." autocomplete="off" aria-label="Search questions"></label>
+        <nav class="categories" id="categories" aria-label="Question categories"></nav>
+        <div class="side-separator"></div>
+        <label class="filter-check"><input type="checkbox" id="unansweredOnly"><span>Unanswered only</span></label>
+        <label class="filter-check"><input type="checkbox" id="savedOnly"><span>Saved only</span></label>
+        <button class="side-text-btn" id="randomBtn" type="button">↝ Jump to random question</button>
+        <button class="side-text-btn muted" id="resetBtn" type="button">↺ Reset practice answers</button>
+        <div class="sidebar-tip"><span>QUICK TIP</span><p>Read the Arabic carefully. Good MCQs test your understanding, not confusing English.</p></div>
+      </aside>
+      <div class="quiz-column">
+        <div id="examBanner" class="exam-banner" hidden><span><span class="clock-icon" aria-hidden="true">⏱</span> Timed Mock Exam <small>50 challenging questions</small></span><strong id="timer">45:00</strong></div>
+        <div id="questionPanel" class="question-panel" aria-live="polite">
+          <div class="quiz-top"><div class="quiz-top-left"><span id="topicBadge" class="topic-badge">Advanced practice</span><span id="questionId" class="question-id">Question #1</span></div><button type="button" id="bookmarkBtn" class="bookmark-button" aria-label="Bookmark question" title="Bookmark question">☆ Save</button></div>
+          <div class="question-count"><span id="questionPosition">Question 1 of 562</span><span id="answeredFraction">0 answered</span></div><div class="progress-track"><div id="questionProgress"></div></div>
+          <h2 id="questionText" class="question-text">Loading questions...</h2>
+          <div class="instruction" id="questionInstruction">Choose the best answer below.</div>
+          <div id="optionList" class="option-list"></div>
+          <div class="explain" id="explanation" hidden></div>
+          <div class="help-panel"><button id="helpBtn" class="help-button" type="button" aria-expanded="false">ⓘ What does the grammar term mean?</button><div id="helpText" class="help-text" hidden></div></div>
+        </div>
+        <div id="emptyPanel" class="empty-panel" hidden><strong>No questions found</strong><p>Try a different keyword or remove a filter.</p><button id="clearFilters" type="button" class="action-primary">Show all questions</button></div>
+        <div id="resultsPanel" class="results-panel" hidden></div>
+        <div id="navigation" class="navigation"><button type="button" id="prevBtn" class="action-secondary">← Previous</button><div class="nav-center"><span id="navHint">Select an answer or skip</span><button id="skipBtn" class="nav-skip" type="button">Skip for now</button></div><button type="button" id="nextBtn" class="action-primary">Next question →</button></div>
+        <p class="footer-note">Independent study practice based on the supplied question bank. Not an official exam or guaranteed past paper.</p>
+      </div>
+    </section>
+  </main>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
